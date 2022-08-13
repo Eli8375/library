@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <h1>Library</h1>
+            <h2>Please use this utility to keep track and log books in an easy, simplified interface.</h2>
+        </div>
+        <form action="#">
+            <div class="fields">
+                <div class="title">
+                    <label for="title"><p>Title</p></label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div class="author">
+                    <label for="Author"><p>Author</p></label>
+                    <input type="text" id="author" name="author">
+                </div>
+                <div class="pages">
+                    <label for="pages"><p>Pages</p></label>
+                    <input type="text" id="pages" name="pages">
+                </div>
+                <div class="status">
+                    <label for="status"><p>Status</p></label>
+                    <select name="status" id="status">
+                        <option value="read">Read</option>
+                        <option value="not-read">Not Read</option>
+                    </select>
+                </div>
+            </div>
+            <div class="submit"><button type="submit">Submit</button></div>
+        </form>
+        <div class="data">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">Title</th>
+                        <th style="width: 30%;">Author</th>
+                        <th>Pages</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>259</td>
+                        <td>Not Read</td>
+                        <td><button>delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>145</td>
+                        <td>Read</td>
+                        <td><button>delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>1458</td>
+                        <td>Not Read</td>
+                        <td><button>delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
