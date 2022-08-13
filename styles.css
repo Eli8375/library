@@ -50,22 +50,22 @@ table {
 
 
 
-
+:root, body, .container {
+    background-color: rgb(184, 184, 184);
+}
 
 :root {
-    background-color: rgba(0, 0, 0, 0.887);
-    color: rgba(255, 255, 255, 0.874);
+    color: rgb(0, 0, 0);
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     height: 100vh;
     width: 100vw;
+    padding-top: 50px;
 }
-
 .container {
     max-width: 1500px;
     margin: auto;
     box-sizing: border-box;
-    background-color: rgb(255, 0, 4);
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -93,36 +93,55 @@ form {
 
 
 input, button, select {
-    border-radius: 3px;
+    border-radius: 2px;
+    border: rgba(0, 0, 0, 0.47) 2px solid;
+    background-color: transparent;
 }
 input {
-    background-color: transparent;
-    border: rgba(255, 255, 255, 0.47) 3px solid;
     min-width: 25rem;
     max-width: 100%;
     height: 100%;
+    padding: 10px;
+    font-size: larger;
 }
-input:focus {
+input:focus, select:focus {
     outline: none;
-    border: rgba(0, 247, 255, 0.806) 3px solid;
+    border: rgb(0, 247, 255) 2px solid;
 }
-
+input:hover, select:hover {
+    outline: none;
+    border: rgba(0, 247, 255, 0.774) 2px solid;
+}
+input:active, select:active {
+    outline: none;
+    border: rgb(0, 247, 255) 2px solid;
+}
 select {
     outline: none;
-    background-color: transparent;
-    color: white;
+    color: rgb(0, 0, 0);
     height: 3rem;
 }
 button {
-    background-color: rgba(0, 247, 255, 0.806);
-    color: white;
+    border: 2px solid rgba(0, 247, 255, 0.813);
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
-    border: none;
     padding: 15px 30px 15px 30px;
+}
+button:hover {
+    background-color: rgb(0, 247, 255);
+}
+.delete {
+    border: 2px solid rgb(255, 0, 0);
+}
+.delete:hover {
+    background-color: rgb(255, 0, 0);
 }
 
 
-
+p {
+    font-weight: bold;
+    padding-top: 5px;
+}
 h1 {
     font-size: 50px;
 }
@@ -134,26 +153,22 @@ h2 {
 
 
 table {
-    border: white 2px solid;
     width: 100%;
 }
-thead {
-    border: white 1px solid;
-    text-align: left;
-}
-tr {
-    border: white 0.5px solid;
-}
 th {
-    border: white 1px solid;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+thead {
+    text-align: left;
+    border-bottom: rgba(0, 0, 0, 0.47) 1px solid;
 }
 td {
-    border: white 1px solid;
     text-transform: capitalize;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: rgba(0, 0, 0, 0.47) 1px solid;
 }
-
 .title, .author, .pages, .status {
     gap: 5px;
 }
