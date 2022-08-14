@@ -20,26 +20,26 @@
         <form action="#">
             <div class="fields">
                 <div class="title">
-                    <label for="title"><p>Title</p></label>
-                    <input type="text" id="title" name="title">
+                    <label><p>Title</p></label>
+                    <input type="text" id="title" name="myLibrary">
                 </div>
                 <div class="author">
-                    <label for="Author"><p>Author</p></label>
-                    <input type="text" id="author" name="author">
+                    <label><p>Author</p></label>
+                    <input type="text" id="author" name="myLibrary">
                 </div>
                 <div class="pages">
-                    <label for="pages"><p>Pages</p></label>
-                    <input type="text" id="pages" name="pages">
+                    <label><p>Pages</p></label>
+                    <input type="text" id="pages" name="myLibrary">
                 </div>
                 <div class="status">
-                    <label for="status"><p>Status</p></label>
-                    <select name="status" id="status">
+                    <label><p>Status</p></label>
+                    <select name="myLibrary" id="status">
                         <option value="read">Read</option>
                         <option value="not-read">Not Read</option>
                     </select>
                 </div>
             </div>
-            <div class="submit"><button type="submit">Submit</button></div>
+            <div class="submit"><button type="submit" onclick="addBookToLibrary()">Submit</button></div>
         </form>
         <div class="data">
             <table>
@@ -52,27 +52,27 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="cells">
                     <tr>
                         <td>Lorem</td>
                         <td>Ipsum</td>
                         <td>259</td>
                         <td>Not Read</td>
-                        <td><button class="delete">delete</button></td>
+                        <td class="delete-cell"><button class="delete">delete</button></td>
                     </tr>
                     <tr>
                         <td>Lorem</td>
                         <td>Ipsum</td>
                         <td>145</td>
                         <td>Read</td>
-                        <td><button class="delete">delete</button></td>
+                        <td class="delete-cell"><button class="delete">delete</button></td>
                     </tr>
                     <tr>
                         <td>Lorem</td>
                         <td>Ipsum</td>
                         <td>1458</td>
                         <td>Not Read</td>
-                        <td><button class="delete">delete</button></td>
+                        <td class="delete-cell"><button class="delete">delete</button></td>
                     </tr>
                 </tbody>
             </table>
