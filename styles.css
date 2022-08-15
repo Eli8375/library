@@ -50,7 +50,7 @@ table {
 
 
 
-:root, body, .container {
+:root, body, .container, select {
     background-color: rgb(34, 34, 34);
     color: rgba(255, 255, 255, 0.802);
 }
@@ -109,18 +109,15 @@ input {
 input:focus, select:focus {
     outline: none;
     border: rgb(0, 247, 255) 2px solid;
+    background-color: rgb(57, 57, 57);
 }
 input:hover, select:hover {
     outline: none;
     border: rgba(0, 247, 255, 0.774) 2px solid;
-}
-input:active, select:active {
-    outline: none;
-    border: rgb(0, 247, 255) 2px solid;
+    background-color: rgb(57, 57, 57);
 }
 select {
     outline: none;
-    color: rgba(255, 255, 255, 0.802);
     height: 3rem;
 }
 
@@ -129,7 +126,7 @@ button {
     border: 2px solid rgba(0, 247, 255, 0.813);
     color: rgba(255, 255, 255, 0.802);
     text-transform: uppercase;
-    padding: 15px 30px 15px 30px;
+    padding: 10px 25px 10px 25px;
 }
 button:hover {
     background-color: rgba(0, 247, 255, 0.813);
@@ -166,6 +163,7 @@ table {
 th {
     padding-bottom: 20px;
     font-weight: bold;
+    background-color: rgb(34, 34, 34);
 }
 thead {
     text-align: left;
@@ -178,6 +176,9 @@ td {
 }
 tr {
     border-bottom: rgba(255, 255, 255, 0.802) 1px solid;
+}
+tr:hover {
+    background-color: rgb(57, 57, 57);
 }
 .title, .author, .pages, .status {
     gap: 5px;

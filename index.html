@@ -35,11 +35,11 @@
                     <label><p>Status</p></label>
                     <select name="myLibrary" id="status">
                         <option value="read">Read</option>
-                        <option value="not-read">Not Read</option>
+                        <option value="not read">Not Read</option>
                     </select>
                 </div>
             </div>
-            <div class="submit"><button type="submit" onclick="addBookToLibrary()">Submit</button></div>
+            <div class="submit"><button id="submit-button" type="button">Submit</button></div>
         </form>
         <div class="data">
             <table>
@@ -52,28 +52,7 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody class="cells">
-                    <tr>
-                        <td>Lorem</td>
-                        <td>Ipsum</td>
-                        <td>259</td>
-                        <td>Not Read</td>
-                        <td class="delete-cell"><button class="delete">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>Lorem</td>
-                        <td>Ipsum</td>
-                        <td>145</td>
-                        <td>Read</td>
-                        <td class="delete-cell"><button class="delete">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>Lorem</td>
-                        <td>Ipsum</td>
-                        <td>1458</td>
-                        <td>Not Read</td>
-                        <td class="delete-cell"><button class="delete">delete</button></td>
-                    </tr>
+                <tbody id="cells">
                 </tbody>
             </table>
         </div>
