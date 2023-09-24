@@ -180,6 +180,6 @@ tr {
 tr:hover {
     background-color: rgb(57, 57, 57);
 }
-.title, .author, .pages, .status {
+.title, .author, .pages, .update {
     gap: 5px;
 }

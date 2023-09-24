@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -31,15 +31,15 @@
                     <label><p>Pages</p></label>
                     <input type="text" id="pages" name="myLibrary">
                 </div>
-                <div class="status">
-                    <label><p>Status</p></label>
-                    <select name="myLibrary" id="status">
+                <div class="update">
+                    <label><p>Update</p></label>
+                    <select name="myLibrary" id="update">
                         <option value="read">Read</option>
                         <option value="not read">Not Read</option>
                     </select>
                 </div>
             </div>
-            <div class="submit"><button id="submit-button" type="button">Submit</button></div>
+            <div class="submit"><button class="submit-button" id="submit-button" type="button">Submit</button></div>
         </form>
         <div class="data">
             <table>
@@ -48,7 +48,7 @@
                         <th style="width: 30%;">Title</th>
                         <th style="width: 30%;">Author</th>
                         <th>Pages</th>
-                        <th>Status</th>
+                        <th>Update</th>
                         <th></th>
                     </tr>
                 </thead>
